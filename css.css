@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+<style>
+div {
+  padding: 50px 50px;
+  border: 1px solid #4CAF50;
+}
+</style>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.contact
+{
+    position: relative;
+    min-height: 80vh;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(CCM1.JPG);
+    background-size: cover;
+}
+.content 
+{
+    max-width: 800px;
+    text-align: center;
+}
+.content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contactinfo h3
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.content     p 
+{
+    font-weight: 400;
+    color: #fff;
+}
+.contactinfo p 
+{
+    font-weight: 400;
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+/*.container .contactinfo
+{
+    width: 50%;
+    display:flex;
+}*/
+.contactinfo h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}

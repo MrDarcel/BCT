@@ -1,0 +1,31 @@
+from flask import Flask, render_template, request
+
+app = Flask(__name)
+
+# Define a simple blockchain (for demonstration purposes)
+blockchain = []
+
+# Endpoint for rendering the HTML page
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+# Endpoint for submitting medical records
+@app.route('/submit', methods=['POST'])
+def submit_record():
+    patient_name = request.form['patientName']
+    diagnosis = request.form['diagnosis']
+    treatment = request.form['treatment']
+   
+    # Create a new record block and add it to the blockchain
+    record = {
+        'patientName': patient_name,
+        'diagnosis': diagnosis,
+        'treatment': treatment
+    }
+    blockchain.append(record)
+   
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
